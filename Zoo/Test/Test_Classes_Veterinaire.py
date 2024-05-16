@@ -22,6 +22,6 @@ from Classes.Classe_Veterinaire import Veterinaire
     (95, True),
     (105, True),
 ])
-def test__enclos(valeur_envoyer, valeur_prevue):
+def test_veterinaire(valeur_envoyer, valeur_prevue):
     veterinaire = Veterinaire()
     assert veterinaire.prendre_retraitre() == valeur_prevue

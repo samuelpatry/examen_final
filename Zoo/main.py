@@ -16,6 +16,7 @@ import sys
 import PyQt5
 from PyQt5 import QtWidgets
 
+from Classes.Classe_Enclos import Enclos
 #importer les interfaces graphiques
 import UI_PY.MainWindow_zoo
 from PyQt5.QtCore import pyqtSlot
@@ -68,6 +69,7 @@ class fenetrePrincipale(QtWidgets.QMainWindow, UI_PY.MainWindow_zoo.Ui_MainWindo
         dialog.show()
         dialog.exec_()
 
+
     @pyqtSlot()
     def on_pushButton_recherche_clicked(self):
         # Instancier une boite de dialogue FenetreListview
@@ -83,6 +85,7 @@ class fenetrePrincipale(QtWidgets.QMainWindow, UI_PY.MainWindow_zoo.Ui_MainWindo
         # Afficher la boite de dialogue
         #dialog.show()
         #dialog.exec_()
+
 
     @pyqtSlot()
     def on_pushButton_enclos_clicked(self):
